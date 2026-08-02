@@ -369,8 +369,20 @@
       color: #726c63;
     }
 
-    input, select, textarea, button { font-family: var(--font-body); }
+    select.form-control {
+      color-scheme: dark;
+    }
 
+    select.form-control option {
+      background-color: #0c0c0c;
+      color: #fff;
+    }
+
+    select.form-control option:disabled {
+      color: #726c63;
+    }
+
+    input, select, textarea, button { font-family: var(--font-body); }
     ::-webkit-scrollbar { width: 8px; }
     ::-webkit-scrollbar-track { background: #050505; }
     ::-webkit-scrollbar-thumb { background: #333; border-radius: 4px; }
